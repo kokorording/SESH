@@ -45,9 +45,8 @@ param.mean_MAP= mean([param.Image_to_Text_MAP, param.Text_to_Image_MAP]);
 param.trainT = eva_info.trainT;
 result = rmfield(param, {'KX','KY','DX','DY'});
 fprintf('traintime: %f\n',result.trainT);
-% nowTime=getNowTime();
-% result_path = ['result/result_' dataname nowTime];
-% save(result_path,'result');
+result_path = ['result/result_' dataname];
+save(result_path,'result');
 
 end
 
