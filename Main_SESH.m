@@ -4,8 +4,7 @@ clc;
 %% parameters setting
 n_anchors=1500;
 %% load dataset
-% dataname = 'MIRFLICKR';
-dataname = 'mirflickr5k';
+dataname = 'MIRFLICKR';
 datasets = ['datasets/' dataname '.mat'];
 load(datasets); 
 XTrain = I_tr; YTrain = T_tr; LTrain = L_tr;
